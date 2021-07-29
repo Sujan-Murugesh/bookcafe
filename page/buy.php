@@ -289,9 +289,9 @@ function send_mail($user_email,$ad1,$ad2,$ad3,$ad4,$bk_name,$tot){
             //quantity (-)
             $qua_que="UPDATE `book` SET quantity=quantity-$item_qnt WHERE b_id='$item_id'";
             $qua_res=mysqli_query($con,$qua_que);
-            send_mail($user_email);
+            // send_mail($user_email);
             
-             send_mail($user_email,$ad1,$ad2,$ad3,$ad4);
+            //  send_mail($user_email,$ad1,$ad2,$ad3,$ad4);
             header("location:order_seccuss.php");
             //
         }
